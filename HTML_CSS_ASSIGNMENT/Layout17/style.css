@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    line-height: 1.5;
+}
+
+/* Container */
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+/* Top Navigation Bar */
+.top-nav {
+    height: 3.5rem;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    gap: 0.5rem;
+    overflow-x: auto;
+    flex-shrink: 0;
+}
+
+.nav-label {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    color: #737373;
+    margin-right: 0.5rem;
+    flex-shrink: 0;
+}
+
+.layout-btn {
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: #f5f5f5;
+    color: #525252;
+    border: none;
+    cursor: pointer;
+}
+
+.layout-btn:hover {
+    background-color: #e5e5e5;
+}
+
+.layout-btn-active {
+    background-color: #171717;
+    color: #ffffff;
+}
+
+/* Source Bar */
+.source-bar {
+    height: 2rem;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.source-text {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: #737373;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    overflow: hidden;
+}
+
+.content-wrapper {
+    display: flex;
+    height: 100%;
+}
+
+/* Left Sidebar */
+.left-sidebar {
+    width: 18rem;
+    border-right: 1px solid #e5e5e5;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-header {
+    height: 3.5rem;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.header-title {
+    height: 1.5rem;
+    width: 8rem;
+    background-color: #e5e5e5;
+    border-radius: 0.25rem;
+}
+
+.sidebar-add-section {
+    padding: 1rem;
+}
+
+.add-button {
+    height: 2.5rem;
+    background-color: #171717;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+/* Elements List */
+.elements-list {
+    flex: 1;
+    padding: 1rem;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    overflow: auto;
+}
+
+.element-card {
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    border: 1px solid #e5e5e5;
+    cursor: pointer;
+}
+
+.element-card-active {
+    border-color: #171717;
+    background-color: #f5f5f5;
+}
+
+.element-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.element-icon {
+    height: 1rem;
+    width: 1rem;
+    background-color: #d4d4d4;
+    border-radius: 0.25rem;
+}
+
+.element-icon-2 {
+    height: 1rem;
+    width: 1rem;
+    background-color: #e5e5e5;
+    border-radius: 0.25rem;
+}
+
+.element-label {
+    height: 1rem;
+    flex: 1;
+    background-color: #e5e5e5;
+    border-radius: 0.25rem;
+}
+
+.element-description {
+    height: 0.75rem;
+    width: 75%;
+    background-color: #f5f5f5;
+    border-radius: 0.25rem;
+}
+
+/* Canvas Area */
+.canvas-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+}
+
+.canvas-toolbar {
+    height: 3.5rem;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.toolbar-button {
+    height: 2rem;
+    width: 2rem;
+    background-color: #e5e5e5;
+    border-radius: 0.25rem;
+}
+
+.toolbar-button-active {
+    background-color: #171717;
+}
+
+/* Form Preview */
+.form-preview {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.form-container {
+    background-color: #ffffff;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 100%;
+    max-width: 36rem;
+}
+
+.form-title {
+    height: 1.5rem;
+    width: 75%;
+    background-color: #e5e5e5;
+    border-radius: 0.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-field {
+    height: 3rem;
+    background-color: #f5f5f5;
+    border-radius: 0.25rem;
+}
+
+.form-actions {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.action-button {
+    height: 2.5rem;
+    flex: 1;
+    border-radius: 0.25rem;
+}
+
+.action-button-secondary {
+    background-color: #e5e5e5;
+}
+
+.action-button-primary {
+    background-color: #171717;
+}
+
+/* Right Sidebar */
+.right-sidebar {
+    width: 18rem;
+    border-left: 1px solid #e5e5e5;
+    display: flex;
+    flex-direction: column;
+}
+
+.properties-header {
+    height: 3.5rem;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.properties-title {
+    height: 1.25rem;
+    width: 6rem;
+    background-color: #e5e5e5;
+    border-radius: 0.25rem;
+}
+
+/* Properties Content */
+.properties-content {
+    flex: 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.property-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.property-label {
+    height: 1rem;
+    width: 4rem;
+    background-color: #e5e5e5;
+    border-radius: 0.25rem;
+}
+
+.property-label-medium {
+    width: 5rem;
+}
+
+.property-input {
+    height: 2.5rem;
+    background-color: #f5f5f5;
+    border-radius: 0.25rem;
+}
+
+.property-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.toggle-label {
+    height: 1rem;
+    width: 5rem;
+    background-color: #e5e5e5;
+    border-radius: 0.25rem;
+}
+
+.toggle-label-medium {
+    width: 6rem;
+}
+
+.toggle-switch {
+    height: 1.5rem;
+    width: 2.5rem;
+    background-color: #d4d4d4;
+    border-radius: 9999px;
+}
+
+.toggle-switch-active {
+    background-color: #171717;
+}

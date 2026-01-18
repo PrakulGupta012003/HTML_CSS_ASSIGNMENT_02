@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    line-height: 1.5;
+}
+
+/* Container */
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+/* Top Navigation Bar */
+.top-nav {
+    height: 3.5rem;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    gap: 0.5rem;
+    overflow-x: auto;
+    flex-shrink: 0;
+}
+
+.nav-label {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    color: #737373;
+    margin-right: 0.5rem;
+    flex-shrink: 0;
+}
+
+.layout-btn {
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: #f5f5f5;
+    color: #525252;
+    border: none;
+    cursor: pointer;
+}
+
+.layout-btn:hover {
+    background-color: #e5e5e5;
+}
+
+.layout-btn-active {
+    background-color: #171717;
+    color: #ffffff;
+}
+
+/* Source Bar */
+.source-bar {
+    height: 2rem;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.source-text {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: #737373;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    overflow: hidden;
+}
+
+.content-wrapper {
+    display: flex;
+    height: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 16rem;
+    border-right: 1px solid #e5e5e5;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.search-box {
+    height: 2.5rem;
+    width: 100%;
+    background-color: #f5f5f5;
+    border-radius: 0.25rem;
+    display: flex;
+    align-items: center;
+    padding: 0 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.search-placeholder {
+    height: 1rem;
+    flex: 1;
+    background-color: #e5e5e5;
+    border-radius: 0.25rem;
+}
+
+.nav-item {
+    height: 2.5rem;
+    border-radius: 0.25rem;
+    display: flex;
+    align-items: center;
+    padding: 0 0.75rem;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    background-color: #f5f5f5;
+}
+
+.nav-item-active {
+    background-color: #e5e5e5;
+}
+
+.nav-placeholder {
+    height: 1rem;
+    width: 6rem;
+    border-radius: 0.25rem;
+    background-color: #e5e5e5;
+}
+
+.nav-item-active .nav-placeholder {
+    background-color: #a3a3a3;
+}
+
+/* Content Area */
+.content-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-header {
+    height: 3.5rem;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+
+.header-title {
+    height: 1.5rem;
+    width: 6rem;
+    background-color: #d4d4d4;
+    border-radius: 0.25rem;
+}
+
+/* Settings Content */
+.settings-content {
+    flex: 1;
+    padding: 1.5rem;
+    overflow: auto;
+}
+
+.settings-container {
+    max-width: 42rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Settings Section */
+.settings-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.section-title {
+    height: 1.25rem;
+    width: 8rem;
+    background-color: #d4d4d4;
+    border-radius: 0.25rem;
+}
+
+.settings-section:nth-child(2) .section-title {
+    width: 7rem;
+}
+
+/* Setting Row */
+.setting-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.setting-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.setting-label {
+    height: 1rem;
+    width: 6rem;
+    background-color: #e5e5e5;
+    border-radius: 0.25rem;
+}
+
+.setting-row:nth-child(2) .setting-label {
+    width: 6rem;
+}
+
+.setting-row:nth-child(3) .setting-label {
+    width: 5rem;
+}
+
+.settings-section:nth-child(2) .setting-row:nth-child(2) .setting-label {
+    width: 8rem;
+}
+
+.settings-section:nth-child(2) .setting-row:nth-child(3) .setting-label {
+    width: 7rem;
+}
+
+.setting-description {
+    height: 0.75rem;
+    width: 12rem;
+    background-color: #f5f5f5;
+    border-radius: 0.25rem;
+}
+
+.setting-row:nth-child(3) .setting-description {
+    width: 10rem;
+}
+
+.settings-section:nth-child(2) .setting-row:nth-child(2) .setting-description {
+    width: 14rem;
+}
+
+.settings-section:nth-child(2) .setting-row:nth-child(3) .setting-description {
+    width: 12rem;
+}
+
+.setting-input {
+    height: 2.5rem;
+    width: 16rem;
+    background-color: #f5f5f5;
+    border-radius: 0.25rem;
+}
+
+/* Toggle Switch */
+.toggle-switch {
+    height: 1.5rem;
+    width: 3rem;
+    background-color: #d4d4d4;
+    border-radius: 9999px;
+}
+
+.toggle-switch-active {
+    background-color: #171717;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.75rem;
+}
+
+.btn-cancel,
+.btn-save {
+    height: 2.5rem;
+    width: 6rem;
+    border-radius: 0.25rem;
+}
+
+.btn-cancel {
+    background-color: #e5e5e5;
+}
+
+.btn-save {
+    background-color: #171717;
+}

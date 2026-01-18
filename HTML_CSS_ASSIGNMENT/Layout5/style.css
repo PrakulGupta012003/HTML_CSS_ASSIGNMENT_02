@@ -1,0 +1,306 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    line-height: 1.5;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Header Navigation */
+.header {
+    height: 3.5rem;
+    border-bottom: 1px solid rgb(229, 229, 229);
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    gap: 0.5rem;
+    overflow-x: auto;
+    flex-shrink: 0;
+}
+
+.header-label {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    color: rgb(115, 115, 115);
+    margin-right: 0.5rem;
+    flex-shrink: 0;
+}
+
+.nav-button {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 500;
+    white-space: nowrap;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-button.active {
+    background-color: rgb(23, 23, 23);
+    color: rgb(255, 255, 255);
+}
+
+.nav-button.inactive {
+    background-color: rgb(245, 245, 245);
+    color: rgb(82, 82, 82);
+}
+
+.nav-button.inactive:hover {
+    background-color: rgb(229, 229, 229);
+}
+
+/* Subheader */
+.subheader {
+    height: 2rem;
+    background-color: rgb(245, 245, 245);
+    border-bottom: 1px solid rgb(229, 229, 229);
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.subheader-text {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: rgb(115, 115, 115);
+}
+
+/* Main Content Area */
+.main-content {
+    flex: 1 1 0%;
+    overflow: hidden;
+}
+
+.content-wrapper {
+    display: flex;
+    height: 100%;
+}
+
+/* Left Sidebar Navigation */
+.sidebar-nav {
+    width: 4rem;
+    background-color: rgb(23, 23, 23);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    gap: 1rem;
+}
+
+.nav-icon {
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: rgb(38, 38, 38);
+    border-radius: 0.25rem;
+}
+
+.nav-icon.active {
+    background-color: rgb(64, 64, 64);
+}
+
+.nav-icon.user {
+    border-radius: 9999px;
+}
+
+.nav-spacer {
+    flex: 1 1 0%;
+}
+
+/* Main Dashboard Area */
+.dashboard-area {
+    flex: 1 1 0%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Dashboard Header */
+.dashboard-header {
+    height: 3.5rem;
+    border-bottom: 1px solid rgb(229, 229, 229);
+    display: flex;
+    align-items: center;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    justify-content: space-between;
+}
+
+.dashboard-title {
+    height: 1.5rem;
+    width: 12rem;
+    background-color: rgb(229, 229, 229);
+    border-radius: 0.25rem;
+}
+
+.dashboard-controls {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.control-button {
+    height: 2rem;
+    width: 8rem;
+    background-color: rgb(245, 245, 245);
+    border-radius: 0.25rem;
+}
+
+.control-icon {
+    height: 2rem;
+    width: 2rem;
+    background-color: rgb(245, 245, 245);
+    border-radius: 0.25rem;
+}
+
+/* Dashboard Content */
+.dashboard-content {
+    flex: 1 1 0%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    overflow: auto;
+    background-color: rgb(250, 250, 250);
+}
+
+/* KPI Cards Grid */
+.kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.kpi-card {
+    height: 7rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.75rem;
+    border: 1px solid rgb(229, 229, 229);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.kpi-label {
+    height: 1rem;
+    width: 5rem;
+    background-color: rgb(229, 229, 229);
+    border-radius: 0.25rem;
+}
+
+.kpi-value {
+    height: 2rem;
+    width: 6rem;
+    background-color: rgb(212, 212, 212);
+    border-radius: 0.25rem;
+}
+
+.kpi-change {
+    height: 0.75rem;
+    width: 4rem;
+    background-color: rgb(245, 245, 245);
+    border-radius: 0.25rem;
+}
+
+/* Charts Section */
+.charts-section {
+    display: flex;
+    gap: 1rem;
+    flex: 1 1 0%;
+}
+
+.chart-card {
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.75rem;
+    border: 1px solid rgb(229, 229, 229);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.chart-card.large {
+    flex: 2;
+}
+
+.chart-card.small {
+    flex: 1 1 0%;
+}
+
+.chart-title {
+    height: 1.5rem;
+    width: 8rem;
+    background-color: rgb(229, 229, 229);
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+.chart-card.small .chart-title {
+    width: 6rem;
+}
+
+.chart-placeholder {
+    flex: 1 1 0%;
+    background-color: rgb(245, 245, 245);
+    border-radius: 0.25rem;
+}
+
+.chart-content {
+    flex: 1 1 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.donut-chart {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 9999px;
+    border: 20px solid rgb(229, 229, 229);
+    border-top-color: rgb(23, 23, 23);
+}
+
+/* Table Section */
+.table-card {
+    height: 16rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.75rem;
+    border: 1px solid rgb(229, 229, 229);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.table-title {
+    height: 1.5rem;
+    width: 10rem;
+    background-color: rgb(229, 229, 229);
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+.table-placeholder {
+    flex: 1 1 0%;
+    background-color: rgb(245, 245, 245);
+    border-radius: 0.25rem;
+}
