@@ -3,228 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calendar</title>
+    <title>Sidebar + Content</title>
+    <meta name="description" content="Sidebar + Content">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Top Navigation Bar -->
-        <div class="top-nav">
-            <span class="nav-label">Layouts:</span>
-            <button class="layout-btn">3-Column Feed</button>
-            <button class="layout-btn">Sidebar + Content</button>
-            <button class="layout-btn">Filter + Grid</button>
-            <button class="layout-btn">Map + List Split</button>
-            <button class="layout-btn">Dashboard KPI</button>
-            <button class="layout-btn">CRM Record Detail</button>
-            <button class="layout-btn">Data Table</button>
-            <button class="layout-btn">Kanban Board</button>
-            <button class="layout-btn">Chat/Messenger</button>
-            <button class="layout-btn">Profile + Feed</button>
-            <button class="layout-btn">Search Results</button>
-            <button class="layout-btn">Video Player</button>
-            <button class="layout-btn">E-commerce PDP</button>
-            <button class="layout-btn">Live Score</button>
-            <button class="layout-btn">Settings Page</button>
-            <button class="layout-btn layout-btn-active">Calendar</button>
-            <button class="layout-btn">Form Builder</button>
+    <div class="screen">
+        <nav class="top-nav">
+            <span>Layouts: </span>
+            <a href="../Layout1/index.html">3-Column Feed</a>
+            <a href="../Layout2/index.html">Sidebar + Content</a>
+            <a href="../Layout3/index.html">Filter + Grid</a>
+            <a href="../Layout4/index.html">Map + List Split</a>
+            <a href="../Layout5/index.html">Dashboard KPI</a>
+            <a href="../Layout6/index.html">CRM Record Details</a>
+            <a href="../Layout7/index.html">Data Table</a>
+            <a href="../Layout8/index.html">Kanban Board</a>
+            <a href="../Layout9/index.html">Chat/Messenger</a>
+            <a href="../Layout10/index.html">Profile + Feed</a>
+            <a href="../Layout11/index.html">Search Results</a>
+            <a href="../Layout12/index.html">Video Player</a>
+            <a href="../Layout13/index.html">E-commerce PDP</a>
+            <a href="../Layout14/index.html">Live Score</a>
+            <a href="../Layout15/index.html">Settings Page</a>
+            <a class="active" href="../Layout16/index.html">Calender</a>
+            <a href="../Layout17/index.html">Form Builder</a>
+        </nav>
+
+        
+        
+        <div class="source">
+            <span>    
+                Source: Google Calender
+            </span>
         </div>
 
-        <!-- Source Info Bar -->
-        <div class="source-bar">
-            <span class="source-text">Source: Google Calendar</span>
-        </div>
-
-        <!-- Main Content Area -->
-        <div class="main-content">
-            <div class="content-wrapper">
-                <!-- Left Sidebar with Mini Calendar -->
-                <div class="sidebar">
-                    <!-- Create Button -->
-                    <div class="create-btn"></div>
-
-                    <!-- Mini Calendar -->
-                    <div class="mini-calendar">
-                        <!-- Day Headers -->
-                        <div class="calendar-header">
-                            <div class="day-header">S</div>
-                            <div class="day-header">M</div>
-                            <div class="day-header">T</div>
-                            <div class="day-header">W</div>
-                            <div class="day-header">T</div>
-                            <div class="day-header">F</div>
-                            <div class="day-header">S</div>
-                        </div>
-
-                        <!-- Calendar Dates -->
-                        <div class="calendar-dates">
-                            <div class="calendar-day">2</div>
-                            <div class="calendar-day">3</div>
-                            <div class="calendar-day">4</div>
-                            <div class="calendar-day">5</div>
-                            <div class="calendar-day">6</div>
-                            <div class="calendar-day">7</div>
-                            <div class="calendar-day">8</div>
-                            <div class="calendar-day">9</div>
-                            <div class="calendar-day">10</div>
-                            <div class="calendar-day">11</div>
-                            <div class="calendar-day">12</div>
-                            <div class="calendar-day">13</div>
-                            <div class="calendar-day">14</div>
-                            <div class="calendar-day">15</div>
-                            <div class="calendar-day">16</div>
-                            <div class="calendar-day calendar-day-active">17</div>
-                            <div class="calendar-day">18</div>
-                            <div class="calendar-day">19</div>
-                            <div class="calendar-day">20</div>
-                            <div class="calendar-day">21</div>
-                            <div class="calendar-day">22</div>
-                            <div class="calendar-day">23</div>
-                            <div class="calendar-day">24</div>
-                            <div class="calendar-day">25</div>
-                            <div class="calendar-day">26</div>
-                            <div class="calendar-day">27</div>
-                            <div class="calendar-day">28</div>
-                            <div class="calendar-day">29</div>
-                            <div class="calendar-day">30</div>
-                            <div class="calendar-day">31</div>
-                            <div class="calendar-day">1</div>
-                            <div class="calendar-day">2</div>
-                            <div class="calendar-day">3</div>
-                            <div class="calendar-day">4</div>
-                            <div class="calendar-day">5</div>
-                        </div>
-                    </div>
-
-                    <!-- Divider -->
-                    <div class="divider"></div>
-
-                    <!-- Calendar List -->
-                    <div class="calendar-list">
-                        <div class="list-title"></div>
-                        <div class="list-item">
-                            <div class="list-indicator"></div>
-                            <div class="list-label"></div>
-                        </div>
-                        <div class="list-item">
-                            <div class="list-indicator"></div>
-                            <div class="list-label"></div>
-                        </div>
-                        <div class="list-item">
-                            <div class="list-indicator"></div>
-                            <div class="list-label"></div>
-                        </div>
-                    </div>
+        <div class="calendar-container">
+            <div class="sidebar">
+              <div class="logo"></div>
+              <div class="mini-calendar">
+                <div class="day-header">S</div>
+                <div class="day-header">M</div>
+                <div class="day-header">T</div>
+                <div class="day-header">W</div>
+                <div class="day-header">T</div>
+                <div class="day-header">F</div>
+                <div class="day-header">S</div>
+                <div class="day-cell">2</div>
+                <div class="day-cell">3</div>
+                <div class="day-cell">4</div>
+                <div class="day-cell">5</div>
+                <div class="day-cell">6</div>
+                <div class="day-cell">7</div>
+                <div class="day-cell">8</div>
+                <div class="day-cell">9</div>
+                <div class="day-cell">10</div>
+                <div class="day-cell">11</div>
+                <div class="day-cell">12</div>
+                <div class="day-cell">13</div>
+                <div class="day-cell">14</div>
+                <div class="day-cell">15</div>
+                <div class="day-cell">16</div>
+                <div class="day-cell today">17</div>
+                <div class="day-cell">18</div>
+                <div class="day-cell">19</div>
+                <div class="day-cell">20</div>
+                <div class="day-cell">21</div>
+                <div class="day-cell">22</div>
+                <div class="day-cell">23</div>
+                <div class="day-cell">24</div>
+                <div class="day-cell">25</div>
+                <div class="day-cell">26</div>
+                <div class="day-cell">27</div>
+                <div class="day-cell">28</div>
+                <div class="day-cell">29</div>
+                <div class="day-cell">30</div>
+                <div class="day-cell">31</div>
+                <div class="day-cell other-month">1</div>
+                <div class="day-cell other-month">2</div>
+                <div class="day-cell other-month">3</div>
+                <div class="day-cell other-month">4</div>
+                <div class="day-cell other-month">5</div>
+              </div>
+              <div class="divider"></div>
+              <div class="task-section">
+                <div class="task-header"></div>
+                <div class="task-item">
+                  <div class="task-checkbox"></div>
+                  <div class="task-text"></div>
                 </div>
-
-                <!-- Main Calendar Area -->
-                <div class="calendar-main">
-                    <!-- Calendar Header -->
-                    <div class="calendar-header-bar">
-                        <div class="nav-button"></div>
-                        <div class="nav-button"></div>
-                        <div class="current-date"></div>
-                        <div class="header-spacer"></div>
-                        <div class="view-switcher">
-                            <div class="view-btn view-btn-active"></div>
-                            <div class="view-btn"></div>
-                            <div class="view-btn"></div>
-                        </div>
-                    </div>
-
-                    <!-- Calendar Grid -->
-                    <div class="calendar-grid">
-                        <!-- Time Column -->
-                        <div class="time-column">
-                            <div class="time-slot"><span class="time-label">8:00</span></div>
-                            <div class="time-slot"><span class="time-label">9:00</span></div>
-                            <div class="time-slot"><span class="time-label">10:00</span></div>
-                            <div class="time-slot"><span class="time-label">11:00</span></div>
-                            <div class="time-slot"><span class="time-label">12:00</span></div>
-                            <div class="time-slot"><span class="time-label">13:00</span></div>
-                            <div class="time-slot"><span class="time-label">14:00</span></div>
-                            <div class="time-slot"><span class="time-label">15:00</span></div>
-                            <div class="time-slot"><span class="time-label">16:00</span></div>
-                            <div class="time-slot"><span class="time-label">17:00</span></div>
-                            <div class="time-slot"><span class="time-label">18:00</span></div>
-                            <div class="time-slot"><span class="time-label">19:00</span></div>
-                        </div>
-
-                        <!-- Days Grid -->
-                        <div class="days-grid">
-                            <!-- Monday -->
-                            <div class="day-column">
-                                <div class="day-header-cell">
-                                    <span class="day-name">Mon</span>
-                                    <span class="day-number">15</span>
-                                </div>
-                                <div class="day-content"></div>
-                            </div>
-
-                            <!-- Tuesday -->
-                            <div class="day-column">
-                                <div class="day-header-cell">
-                                    <span class="day-name">Tue</span>
-                                    <span class="day-number">16</span>
-                                </div>
-                                <div class="day-content">
-                                    <div class="event event-1"></div>
-                                </div>
-                            </div>
-
-                            <!-- Wednesday -->
-                            <div class="day-column">
-                                <div class="day-header-cell">
-                                    <span class="day-name">Wed</span>
-                                    <span class="day-number day-number-today">17</span>
-                                </div>
-                                <div class="day-content">
-                                    <div class="event event-2"></div>
-                                </div>
-                            </div>
-
-                            <!-- Thursday -->
-                            <div class="day-column">
-                                <div class="day-header-cell">
-                                    <span class="day-name">Thu</span>
-                                    <span class="day-number">18</span>
-                                </div>
-                                <div class="day-content"></div>
-                            </div>
-
-                            <!-- Friday -->
-                            <div class="day-column">
-                                <div class="day-header-cell">
-                                    <span class="day-name">Fri</span>
-                                    <span class="day-number">19</span>
-                                </div>
-                                <div class="day-content">
-                                    <div class="event event-3"></div>
-                                </div>
-                            </div>
-
-                            <!-- Saturday -->
-                            <div class="day-column">
-                                <div class="day-header-cell">
-                                    <span class="day-name">Sat</span>
-                                    <span class="day-number">20</span>
-                                </div>
-                                <div class="day-content"></div>
-                            </div>
-
-                            <!-- Sunday -->
-                            <div class="day-column">
-                                <div class="day-header-cell">
-                                    <span class="day-name">Sun</span>
-                                    <span class="day-number">21</span>
-                                </div>
-                                <div class="day-content"></div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="task-item">
+                  <div class="task-checkbox"></div>
+                  <div class="task-text"></div>
                 </div>
+                <div class="task-item">
+                  <div class="task-checkbox"></div>
+                  <div class="task-text"></div>
+                </div>
+              </div>
             </div>
-        </div>
+            <div class="main-area">
+              <div class="toolbar">
+                <button class="nav-button"></button>
+                <button class="nav-button"></button>
+                <div class="month-label"></div>
+                <div class="spacer"></div>
+                <div class="view-toggle">
+                  <button class="view-button active"></button>
+                  <button class="view-button"></button>
+                  <button class="view-button"></button>
+                </div>
+              </div>
+              <div class="calendar-grid">
+                <div class="time-column">
+                  <div class="time-slot"><span class="time-label">8:00</span></div>
+                  <div class="time-slot"><span class="time-label">9:00</span></div>
+                  <div class="time-slot"><span class="time-label">10:00</span></div>
+                  <div class="time-slot"><span class="time-label">11:00</span></div>
+                  <div class="time-slot"><span class="time-label">12:00</span></div>
+                  <div class="time-slot"><span class="time-label">13:00</span></div>
+                  <div class="time-slot"><span class="time-label">14:00</span></div>
+                  <div class="time-slot"><span class="time-label">15:00</span></div>
+                  <div class="time-slot"><span class="time-label">16:00</span></div>
+                  <div class="time-slot"><span class="time-label">17:00</span></div>
+                  <div class="time-slot"><span class="time-label">18:00</span></div>
+                  <div class="time-slot"><span class="time-label">19:00</span></div>
+                </div>
+                <div class="days-grid">
+                  <div class="day-column">
+                    <div class="day-header-cell">
+                      <span class="day-name">Mon</span>
+                      <span class="day-number">15</span>
+                    </div>
+                    <div class="day-content"></div>
+                  </div>
+                  <div class="day-column">
+                    <div class="day-header-cell">
+                      <span class="day-name">Tue</span>
+                      <span class="day-number">16</span>
+                    </div>
+                    <div class="day-content">
+                      <div class="event gray"></div>
+                    </div>
+                  </div>
+                  <div class="day-column">
+                    <div class="day-header-cell">
+                      <span class="day-name">Wed</span>
+                      <span class="day-number today">17</span>
+                    </div>
+                    <div class="day-content">
+                      <div class="event dark"></div>
+                    </div>
+                  </div>
+                  <div class="day-column">
+                    <div class="day-header-cell">
+                      <span class="day-name">Thu</span>
+                      <span class="day-number">18</span>
+                    </div>
+                    <div class="day-content"></div>
+                  </div>
+                  <div class="day-column">
+                    <div class="day-header-cell">
+                      <span class="day-name">Fri</span>
+                      <span class="day-number">19</span>
+                    </div>
+                    <div class="day-content">
+                      <div class="event light"></div>
+                    </div>
+                  </div>
+                  <div class="day-column">
+                    <div class="day-header-cell">
+                      <span class="day-name">Sat</span>
+                      <span class="day-number">20</span>
+                    </div>
+                    <div class="day-content"></div>
+                  </div>
+                  <div class="day-column">
+                    <div class="day-header-cell">
+                      <span class="day-name">Sun</span>
+                      <span class="day-number">21</span>
+                    </div>
+                    <div class="day-content"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
     </div>
+    
 </body>
 </html>
