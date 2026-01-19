@@ -1,265 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kanban Board Layout</title>
+    <title>Sidebar + Content</title>
+    <meta name="description" content="Sidebar + Content">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
-        <!-- Top Navigation Bar -->
-        <div class="top-nav">
-            <span class="nav-label">Layouts:</span>
-            <button class="nav-btn">3-Column Feed</button>
-            <button class="nav-btn">Sidebar + Content</button>
-            <button class="nav-btn">Filter + Grid</button>
-            <button class="nav-btn">Map + List Split</button>
-            <button class="nav-btn">Dashboard KPI</button>
-            <button class="nav-btn">CRM Record Detail</button>
-            <button class="nav-btn">Data Table</button>
-            <button class="nav-btn active">Kanban Board</button>
-            <button class="nav-btn">Chat/Messenger</button>
-            <button class="nav-btn">Profile + Feed</button>
-            <button class="nav-btn">Search Results</button>
-            <button class="nav-btn">Video Player</button>
-            <button class="nav-btn">E-commerce PDP</button>
-            <button class="nav-btn">Live Score</button>
-            <button class="nav-btn">Settings Page</button>
-            <button class="nav-btn">Calendar</button>
-            <button class="nav-btn">Form Builder</button>
-        </div>
+    <div class="screen">
+        <nav class="top-nav">
+            <span>Layouts: </span>
+            <a href="../Layout1/index.html">3-Column Feed</a>
+            <a href="../Layout2/index.html">Sidebar + Content</a>
+            <a href="../Layout3/index.html">Filter + Grid</a>
+            <a href="../Layout4/index.html">Map + List Split</a>
+            <a href="../Layout5/index.html">Dashboard KPI</a>
+            <a href="../Layout6/index.html">CRM Record Details</a>
+            <a href="../Layout7/index.html">Data Table</a>
+            <a class="active" href="../Layout8/index.html">Kanban Board</a>
+            <a href="../Layout9/index.html">Chat/Messenger</a>
+            <a href="../Layout10/index.html">Profile + Feed</a>
+            <a href="../Layout11/index.html">Search Results</a>
+            <a href="../Layout12/index.html">Video Player</a>
+            <a href="../Layout13/index.html">E-commerce PDP</a>
+            <a href="../Layout14/index.html">Live Score</a>
+            <a href="../Layout15/index.html">Settings Page</a>
+            <a href="../Layout16/index.html">Calender</a>
+            <a href="../Layout17/index.html">Form Builder</a>
+        </nav>
 
-        <!-- Source Bar -->
-        <div class="source-bar">
-            <span class="source-text">Source: Trello/Jira</span>
-        </div>
 
-        <!-- Main Content -->
-        <div class="main-content">
-            <div class="content-wrapper">
-                <!-- Header -->
-                <div class="header">
-                    <div class="header-title"></div>
-                    <div class="header-spacer"></div>
-                    <div class="header-avatars">
-                        <div class="avatar"></div>
-                        <div class="avatar"></div>
-                        <div class="avatar"></div>
-                        <div class="avatar"></div>
+        <div class="source">
+            <span>
+                Source: Trello/Jira
+            </span>
+        </div>
+        <div class="kanban-container">
+            <div class="top-bar">
+                <div class="board-title"></div>
+                <div class="spacer"></div>
+                <div class="avatar-group">
+                    <div class="avatar"></div>
+                    <div class="avatar"></div>
+                    <div class="avatar"></div>
+                    <div class="avatar"></div>
+                </div>
+                <div class="add-button"></div>
+            </div>
+
+            <div class="board-area">
+                <!-- Column 1 -->
+                <div class="column">
+                    <div class="column-header">
+                        <div class="column-title"></div>
+                        <div class="column-count"></div>
                     </div>
-                    <div class="header-btn"></div>
+                    <div class="cards-container">
+                        <div class="card">
+                            <div class="card-title"></div>
+                            <div class="card-subtitle"></div>
+                            <div class="card-footer">
+                                <div class="card-tags">
+                                    <div class="card-tag"></div>
+                                </div>
+                                <div class="card-avatar"></div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-title"></div>
+                            <div class="card-subtitle"></div>
+                            <div class="card-footer">
+                                <div class="card-tags">
+                                    <div class="card-tag"></div>
+                                </div>
+                                <div class="card-avatar"></div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-title"></div>
+                            <div class="card-subtitle"></div>
+                            <div class="card-footer">
+                                <div class="card-tags">
+                                    <div class="card-tag"></div>
+                                </div>
+                                <div class="card-avatar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add-card-button"></div>
                 </div>
 
-                <!-- Kanban Board Container -->
-                <div class="kanban-container">
-                    <!-- Column 1 -->
-                    <div class="kanban-column">
-                        <div class="column-header">
-                            <div class="column-title"></div>
-                            <div class="column-menu"></div>
-                        </div>
-                        <div class="column-cards">
-                            <div class="card">
-                                <div class="card-title-full"></div>
-                                <div class="card-title-partial"></div>
-                                <div class="card-footer">
-                                    <div class="card-tags">
-                                        <div class="card-tag"></div>
-                                    </div>
-                                    <div class="card-avatar"></div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-title-full"></div>
-                                <div class="card-title-partial"></div>
-                                <div class="card-footer">
-                                    <div class="card-tags">
-                                        <div class="card-tag"></div>
-                                    </div>
-                                    <div class="card-avatar"></div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-title-full"></div>
-                                <div class="card-title-partial"></div>
-                                <div class="card-footer">
-                                    <div class="card-tags">
-                                        <div class="card-tag"></div>
-                                    </div>
-                                    <div class="card-avatar"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="add-card-btn"></div>
+                <!-- Column 2 -->
+                <div class="column">
+                    <div class="column-header">
+                        <div class="column-title"></div>
+                        <div class="column-count"></div>
                     </div>
+                    <div class="cards-container">
+                        <div class="card">
+                            <div class="card-title"></div>
+                            <div class="card-subtitle"></div>
+                            <div class="card-footer">
+                                <div class="card-tags">
+                                    <div class="card-tag"></div>
+                                </div>
+                                <div class="card-avatar"></div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-title"></div>
+                            <div class="card-subtitle"></div>
+                            <div class="card-footer">
+                                <div class="card-tags">
+                                    <div class="card-tag"></div>
+                                </div>
+                                <div class="card-avatar"></div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-title"></div>
+                            <div class="card-subtitle"></div>
+                            <div class="card-footer">
+                                <div class="card-tags">
+                                    <div class="card-tag"></div>
+                                </div>
+                                <div class="card-avatar"></div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-title"></div>
+                            <div class="card-subtitle"></div>
+                            <div class="card-footer">
+                                <div class="card-tags">
+                                    <div class="card-tag"></div>
+                                </div>
+                                <div class="card-avatar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add-card-button"></div>
+                </div>
 
-                    <!-- Column 2 -->
-                    <div class="kanban-column">
-                        <div class="column-header">
-                            <div class="column-title"></div>
-                            <div class="column-menu"></div>
-                        </div>
-                        <div class="column-cards">
-                            <div class="card">
-                                <div class="card-title-full"></div>
-                                <div class="card-title-partial"></div>
-                                <div class="card-footer">
-                                    <div class="card-tags">
-                                        <div class="card-tag"></div>
-                                    </div>
-                                    <div class="card-avatar"></div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-title-full"></div>
-                                <div class="card-title-partial"></div>
-                                <div class="card-footer">
-                                    <div class="card-tags">
-                                        <div class="card-tag"></div>
-                                    </div>
-                                    <div class="card-avatar"></div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-title-full"></div>
-                                <div class="card-title-partial"></div>
-                                <div class="card-footer">
-                                    <div class="card-tags">
-                                        <div class="card-tag"></div>
-                                    </div>
-                                    <div class="card-avatar"></div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-title-full"></div>
-                                <div class="card-title-partial"></div>
-                                <div class="card-footer">
-                                    <div class="card-tags">
-                                        <div class="card-tag"></div>
-                                    </div>
-                                    <div class="card-avatar"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="add-card-btn"></div>
+                <!-- Column 3 -->
+                <div class="column">
+                    <div class="column-header">
+                        <div class="column-title"></div>
+                        <div class="column-count"></div>
                     </div>
+                    <div class="cards-container">
+                        <div class="card">
+                            <div class="card-title"></div>
+                            <div class="card-subtitle"></div>
+                            <div class="card-footer">
+                                <div class="card-tags">
+                                    <div class="card-tag"></div>
+                                </div>
+                                <div class="card-avatar"></div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-title"></div>
+                            <div class="card-subtitle"></div>
+                            <div class="card-footer">
+                                <div class="card-tags">
+                                    <div class="card-tag"></div>
+                                </div>
+                                <div class="card-avatar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add-card-button"></div>
+                </div>
 
-                    <!-- Column 3 -->
-                    <div class="kanban-column">
-                        <div class="column-header">
-                            <div class="column-title"></div>
-                            <div class="column-menu"></div>
-                        </div>
-                        <div class="column-cards">
-                            <div class="card">
-                                <div class="card-title-full"></div>
-                                <div class="card-title-partial"></div>
-                                <div class="card-footer">
-                                    <div class="card-tags">
-                                        <div class="card-tag"></div>
-                                    </div>
-                                    <div class="card-avatar"></div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-title-full"></div>
-                                <div class="card-title-partial"></div>
-                                <div class="card-footer">
-                                    <div class="card-tags">
-                                        <div class="card-tag"></div>
-                                    </div>
-                                    <div class="card-avatar"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="add-card-btn"></div>
+                <!-- Column 4 -->
+                <div class="column">
+                    <div class="column-header">
+                        <div class="column-title"></div>
+                        <div class="column-count"></div>
                     </div>
+                    <div class="cards-container">
+                        <div class="card">
+                            <div class="card-title"></div>
+                            <div class="card-subtitle"></div>
+                            <div class="card-footer">
+                                <div class="card-tags">
+                                    <div class="card-tag"></div>
+                                </div>
+                                <div class="card-avatar"></div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-title"></div>
+                            <div class="card-subtitle"></div>
+                            <div class="card-footer">
+                                <div class="card-tags">
+                                    <div class="card-tag"></div>
+                                </div>
+                                <div class="card-avatar"></div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-title"></div>
+                            <div class="card-subtitle"></div>
+                            <div class="card-footer">
+                                <div class="card-tags">
+                                    <div class="card-tag"></div>
+                                </div>
+                                <div class="card-avatar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add-card-button"></div>
+                </div>
 
-                    <!-- Column 4 -->
-                    <div class="kanban-column">
-                        <div class="column-header">
-                            <div class="column-title"></div>
-                            <div class="column-menu"></div>
-                        </div>
-                        <div class="column-cards">
-                            <div class="card">
-                                <div class="card-title-full"></div>
-                                <div class="card-title-partial"></div>
-                                <div class="card-footer">
-                                    <div class="card-tags">
-                                        <div class="card-tag"></div>
-                                    </div>
-                                    <div class="card-avatar"></div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-title-full"></div>
-                                <div class="card-title-partial"></div>
-                                <div class="card-footer">
-                                    <div class="card-tags">
-                                        <div class="card-tag"></div>
-                                    </div>
-                                    <div class="card-avatar"></div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-title-full"></div>
-                                <div class="card-title-partial"></div>
-                                <div class="card-footer">
-                                    <div class="card-tags">
-                                        <div class="card-tag"></div>
-                                    </div>
-                                    <div class="card-avatar"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="add-card-btn"></div>
+                <!-- Column 5 -->
+                <div class="column">
+                    <div class="column-header">
+                        <div class="column-title"></div>
+                        <div class="column-count"></div>
                     </div>
-
-                    <!-- Column 5 -->
-                    <div class="kanban-column">
-                        <div class="column-header">
-                            <div class="column-title"></div>
-                            <div class="column-menu"></div>
-                        </div>
-                        <div class="column-cards">
-                            <div class="card">
-                                <div class="card-title-full"></div>
-                                <div class="card-title-partial"></div>
-                                <div class="card-footer">
-                                    <div class="card-tags">
-                                        <div class="card-tag"></div>
-                                    </div>
-                                    <div class="card-avatar"></div>
+                    <div class="cards-container">
+                        <div class="card">
+                            <div class="card-title"></div>
+                            <div class="card-subtitle"></div>
+                            <div class="card-footer">
+                                <div class="card-tags">
+                                    <div class="card-tag"></div>
                                 </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-title-full"></div>
-                                <div class="card-title-partial"></div>
-                                <div class="card-footer">
-                                    <div class="card-tags">
-                                        <div class="card-tag"></div>
-                                    </div>
-                                    <div class="card-avatar"></div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-title-full"></div>
-                                <div class="card-title-partial"></div>
-                                <div class="card-footer">
-                                    <div class="card-tags">
-                                        <div class="card-tag"></div>
-                                    </div>
-                                    <div class="card-avatar"></div>
-                                </div>
+                                <div class="card-avatar"></div>
                             </div>
                         </div>
-                        <div class="add-card-btn"></div>
+                        <div class="card">
+                            <div class="card-title"></div>
+                            <div class="card-subtitle"></div>
+                            <div class="card-footer">
+                                <div class="card-tags">
+                                    <div class="card-tag"></div>
+                                </div>
+                                <div class="card-avatar"></div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-title"></div>
+                            <div class="card-subtitle"></div>
+                            <div class="card-footer">
+                                <div class="card-tags">
+                                    <div class="card-tag"></div>
+                                </div>
+                                <div class="card-avatar"></div>
+                            </div>
+                        </div>
                     </div>
+                    <div class="add-card-button"></div>
                 </div>
             </div>
         </div>
-    </div>
+
 </body>
+
 </html>
