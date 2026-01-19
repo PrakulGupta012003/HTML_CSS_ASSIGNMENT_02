@@ -1,158 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Player Layout</title>
+    <title>Dashboard KPI</title>
+    <meta name="description" content="Dashboard KPI">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
-        <!-- Top Navigation Bar -->
-        <div class="top-nav">
-            <span class="nav-label">Layouts:</span>
-            <button class="nav-btn">3-Column Feed</button>
-            <button class="nav-btn">Sidebar + Content</button>
-            <button class="nav-btn">Filter + Grid</button>
-            <button class="nav-btn">Map + List Split</button>
-            <button class="nav-btn">Dashboard KPI</button>
-            <button class="nav-btn">CRM Record Detail</button>
-            <button class="nav-btn">Data Table</button>
-            <button class="nav-btn">Kanban Board</button>
-            <button class="nav-btn">Chat/Messenger</button>
-            <button class="nav-btn">Profile + Feed</button>
-            <button class="nav-btn">Search Results</button>
-            <button class="nav-btn active">Video Player</button>
-            <button class="nav-btn">E-commerce PDP</button>
-            <button class="nav-btn">Live Score</button>
-            <button class="nav-btn">Settings Page</button>
-            <button class="nav-btn">Calendar</button>
-            <button class="nav-btn">Form Builder</button>
+    <div class="screen">
+        <nav class="top-nav">
+            <span>Layouts: </span>
+            <a href="../Layout1/index.html">3-Column Feed</a>
+            <a href="../Layout2/index.html">Sidebar + Content</a>
+            <a href="../Layout3/index.html">Filter + Grid</a>
+            <a href="../Layout4/index.html">Map + List Split</a>
+            <a href="../Layout5/index.html">Dashboard KPI</a>
+            <a href="../Layout6/index.html">CRM Record Details</a>
+            <a href="../Layout7/index.html">Data Table</a>
+            <a href="../Layout8/index.html">Kanban Board</a>
+            <a href="../Layout9/index.html">Chat/Messenger</a>
+            <a href="../Layout10/index.html">Profile + Feed</a>
+            <a href="../Layout11/index.html">Search Results</a>
+            <a class="active" href="../Layout12/index.html">Video Player</a>
+            <a href="../Layout13/index.html">E-commerce PDP</a>
+            <a href="../Layout14/index.html">Live Score</a>
+            <a href="../Layout15/index.html">Settings Page</a>
+            <a href="../Layout16/index.html">Calender</a>
+            <a href="../Layout17/index.html">Form Builder</a>
+        </nav>
+
+
+        <div class="source">
+            <span>
+                Source: Palantir/Tableau
+            </span>
         </div>
 
-        <!-- Source Bar -->
-        <div class="source-bar">
-            <span class="source-text">Source: YouTube</span>
-        </div>
+        <div class="video-container">
 
-        <!-- Main Content -->
-        <div class="main-content">
-            <div class="content-wrapper">
-                <!-- Header -->
-                <div class="header">
-                    <div class="logo"></div>
-                    <div class="search-bar"></div>
-                    <div class="header-icons">
-                        <div class="header-icon"></div>
-                        <div class="header-icon"></div>
-                        <div class="header-icon-round"></div>
+            <div class="top-header">
+                <div class="logo"></div>
+                <div class="search-bar"></div>
+                <div class="header-actions">
+                    <div class="header-icon"></div>
+                    <div class="header-icon"></div>
+                    <div class="header-avatar"></div>
+                </div>
+            </div>
+    
+
+            <div class="content-area">
+
+                <div class="main-video-section">
+                    <div class="video-player"></div>
+                    <div class="video-info">
+                        <div class="video-title"></div>
+                        <div class="channel-info">
+                            <div class="channel-avatar"></div>
+                            <div class="channel-details">
+                                <div class="channel-name"></div>
+                                <div class="channel-subs"></div>
+                            </div>
+                            <div class="subscribe-button"></div>
+                            <div class="channel-spacer"></div>
+                            <div class="video-actions">
+                                <div class="action-button like"></div>
+                                <div class="action-button share"></div>
+                                <div class="action-button more"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-description">
+                        <div class="description-line short"></div>
+                        <div class="description-line full"></div>
                     </div>
                 </div>
+    
 
-                <!-- Video Content -->
-                <div class="video-content">
-                    <!-- Main Video Section -->
-                    <div class="main-video-section">
-                        <!-- Video Player -->
-                        <div class="video-player"></div>
-
-                        <!-- Video Info -->
-                        <div class="video-info">
-                            <div class="video-title"></div>
-                            <div class="video-meta">
-                                <div class="channel-avatar"></div>
-                                <div class="channel-info">
-                                    <div class="channel-name"></div>
-                                    <div class="channel-subs"></div>
-                                </div>
-                                <div class="subscribe-btn"></div>
-                                <div class="video-meta-spacer"></div>
-                                <div class="video-actions">
-                                    <div class="action-btn"></div>
-                                    <div class="action-btn"></div>
-                                    <div class="action-btn-round"></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Video Description -->
-                        <div class="video-description">
-                            <div class="description-title"></div>
-                            <div class="description-text"></div>
+                <div class="sidebar">
+                    <div class="video-suggestion">
+                        <div class="suggestion-thumbnail"></div>
+                        <div class="suggestion-info">
+                            <div class="suggestion-title"></div>
+                            <div class="suggestion-title second"></div>
+                            <div class="suggestion-channel"></div>
+                            <div class="suggestion-views"></div>
                         </div>
                     </div>
-
-                    <!-- Sidebar - Related Videos -->
-                    <div class="sidebar">
-                        <!-- Related Video 1 -->
-                        <div class="related-video">
-                            <div class="related-thumbnail"></div>
-                            <div class="related-info">
-                                <div class="related-title"></div>
-                                <div class="related-title short"></div>
-                                <div class="related-channel"></div>
-                                <div class="related-views"></div>
-                            </div>
+    
+                    <div class="video-suggestion">
+                        <div class="suggestion-thumbnail"></div>
+                        <div class="suggestion-info">
+                            <div class="suggestion-title"></div>
+                            <div class="suggestion-title second"></div>
+                            <div class="suggestion-channel"></div>
+                            <div class="suggestion-views"></div>
                         </div>
-
-                        <!-- Related Video 2 -->
-                        <div class="related-video">
-                            <div class="related-thumbnail"></div>
-                            <div class="related-info">
-                                <div class="related-title"></div>
-                                <div class="related-title short"></div>
-                                <div class="related-channel"></div>
-                                <div class="related-views"></div>
-                            </div>
+                    </div>
+    
+                    <div class="video-suggestion">
+                        <div class="suggestion-thumbnail"></div>
+                        <div class="suggestion-info">
+                            <div class="suggestion-title"></div>
+                            <div class="suggestion-title second"></div>
+                            <div class="suggestion-channel"></div>
+                            <div class="suggestion-views"></div>
                         </div>
-
-                        <!-- Related Video 3 -->
-                        <div class="related-video">
-                            <div class="related-thumbnail"></div>
-                            <div class="related-info">
-                                <div class="related-title"></div>
-                                <div class="related-title short"></div>
-                                <div class="related-channel"></div>
-                                <div class="related-views"></div>
-                            </div>
+                    </div>
+    
+                    <div class="video-suggestion">
+                        <div class="suggestion-thumbnail"></div>
+                        <div class="suggestion-info">
+                            <div class="suggestion-title"></div>
+                            <div class="suggestion-title second"></div>
+                            <div class="suggestion-channel"></div>
+                            <div class="suggestion-views"></div>
                         </div>
-
-                        <!-- Related Video 4 -->
-                        <div class="related-video">
-                            <div class="related-thumbnail"></div>
-                            <div class="related-info">
-                                <div class="related-title"></div>
-                                <div class="related-title short"></div>
-                                <div class="related-channel"></div>
-                                <div class="related-views"></div>
-                            </div>
+                    </div>
+    
+                    <div class="video-suggestion">
+                        <div class="suggestion-thumbnail"></div>
+                        <div class="suggestion-info">
+                            <div class="suggestion-title"></div>
+                            <div class="suggestion-title second"></div>
+                            <div class="suggestion-channel"></div>
+                            <div class="suggestion-views"></div>
                         </div>
-
-                        <!-- Related Video 5 -->
-                        <div class="related-video">
-                            <div class="related-thumbnail"></div>
-                            <div class="related-info">
-                                <div class="related-title"></div>
-                                <div class="related-title short"></div>
-                                <div class="related-channel"></div>
-                                <div class="related-views"></div>
-                            </div>
-                        </div>
-
-                        <!-- Related Video 6 -->
-                        <div class="related-video">
-                            <div class="related-thumbnail"></div>
-                            <div class="related-info">
-                                <div class="related-title"></div>
-                                <div class="related-title short"></div>
-                                <div class="related-channel"></div>
-                                <div class="related-views"></div>
-                            </div>
+                    </div>
+    
+                    <div class="video-suggestion">
+                        <div class="suggestion-thumbnail"></div>
+                        <div class="suggestion-info">
+                            <div class="suggestion-title"></div>
+                            <div class="suggestion-title second"></div>
+                            <div class="suggestion-channel"></div>
+                            <div class="suggestion-views"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+
     </div>
+
 </body>
+
 </html>
