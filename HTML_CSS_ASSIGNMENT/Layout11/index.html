@@ -1,110 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Results Layout</title>
+    <title>CRM Record Details</title>
+    <meta name="description" content="CRM Record Details">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
-        <!-- Top Navigation Bar -->
-        <div class="top-nav">
-            <span class="nav-label">Layouts:</span>
-            <button class="nav-btn">3-Column Feed</button>
-            <button class="nav-btn">Sidebar + Content</button>
-            <button class="nav-btn">Filter + Grid</button>
-            <button class="nav-btn">Map + List Split</button>
-            <button class="nav-btn">Dashboard KPI</button>
-            <button class="nav-btn">CRM Record Detail</button>
-            <button class="nav-btn">Data Table</button>
-            <button class="nav-btn">Kanban Board</button>
-            <button class="nav-btn">Chat/Messenger</button>
-            <button class="nav-btn">Profile + Feed</button>
-            <button class="nav-btn active">Search Results</button>
-            <button class="nav-btn">Video Player</button>
-            <button class="nav-btn">E-commerce PDP</button>
-            <button class="nav-btn">Live Score</button>
-            <button class="nav-btn">Settings Page</button>
-            <button class="nav-btn">Calendar</button>
-            <button class="nav-btn">Form Builder</button>
+    <div class="screen">
+        <nav class="top-nav">
+            <span>Layouts: </span>
+            <a href="../Layout1/index.html">3-Column Feed</a>
+            <a href="../Layout2/index.html">Sidebar + Content</a>
+            <a href="../Layout3/index.html">Filter + Grid</a>
+            <a href="../Layout4/index.html">Map + List Split</a>
+            <a href="../Layout5/index.html">Dashboard KPI</a>
+            <a href="../Layout6/index.html">CRM Record Details</a>
+            <a href="../Layout7/index.html">Data Table</a>
+            <a href="../Layout8/index.html">Kanban Board</a>
+            <a href="../Layout9/index.html">Chat/Messenger</a>
+            <a href="../Layout10/index.html">Profile + Feed</a>
+            <a class="active" href="../Layout11/index.html">Search Results</a>
+            <a href="../Layout12/index.html">Video Player</a>
+            <a href="../Layout13/index.html">E-commerce PDP</a>
+            <a href="../Layout14/index.html">Live Score</a>
+            <a href="../Layout15/index.html">Settings Page</a>
+            <a href="../Layout16/index.html">Calender</a>
+            <a href="../Layout17/index.html">Form Builder</a>
+        </nav>
+
+
+        <div class="source">
+            <span>
+                Source: Google
+            </span>
         </div>
 
-        <!-- Source Bar -->
-        <div class="source-bar">
-            <span class="source-text">Source: Google</span>
-        </div>
-
-        <!-- Main Content -->
-        <div class="main-content">
-            <div class="content-wrapper">
-                <!-- Search Header -->
-                <div class="search-header">
-                    <div class="search-header-content">
-                        <div class="logo"></div>
-                        <div class="search-input"></div>
-                        <div class="header-spacer"></div>
-                        <div class="header-icon"></div>
-                        <div class="user-avatar"></div>
-                    </div>
-                    <div class="search-tabs">
-                        <div class="tab active"></div>
-                        <div class="tab"></div>
-                        <div class="tab"></div>
-                        <div class="tab"></div>
-                        <div class="tab"></div>
-                    </div>
+        <div class="container">
+            <div class="header">
+                <div class="header-row">
+                    <div class="logo"></div>
+                    <div class="search-bar"></div>
+                    <div class="spacer"></div>
+                    <div class="icon-square"></div>
+                    <div class="icon-circle"></div>
                 </div>
-
-                <!-- Results Container -->
+                <div class="nav-row">
+                    <div class="nav-item-active"></div>
+                    <div class="nav-item nav-item-lg"></div>
+                    <div class="nav-item nav-item-md"></div>
+                    <div class="nav-item nav-item-sm"></div>
+                    <div class="nav-item nav-item-xs"></div>
+                </div>
+            </div>
+            <div class="content">
                 <div class="results-container">
-                    <div class="results-content">
-                        <!-- Results Info -->
-                        <div class="results-info"></div>
-
-                        <!-- Result Item 1 -->
-                        <div class="result-item">
-                            <div class="result-url"></div>
-                            <div class="result-title"></div>
-                            <div class="result-description"></div>
-                            <div class="result-description short"></div>
-                        </div>
-
-                        <!-- Result Item 2 -->
-                        <div class="result-item">
-                            <div class="result-url"></div>
-                            <div class="result-title"></div>
-                            <div class="result-description"></div>
-                            <div class="result-description short"></div>
-                        </div>
-
-                        <!-- Result Item 3 -->
-                        <div class="result-item">
-                            <div class="result-url"></div>
-                            <div class="result-title"></div>
-                            <div class="result-description"></div>
-                            <div class="result-description short"></div>
-                        </div>
-
-                        <!-- Result Item 4 -->
-                        <div class="result-item">
-                            <div class="result-url"></div>
-                            <div class="result-title"></div>
-                            <div class="result-description"></div>
-                            <div class="result-description short"></div>
-                        </div>
-
-                        <!-- Result Item 5 -->
-                        <div class="result-item">
-                            <div class="result-url"></div>
-                            <div class="result-title"></div>
-                            <div class="result-description"></div>
-                            <div class="result-description short"></div>
-                        </div>
+                    <div class="results-info"></div>
+                    <div class="result-item">
+                        <div class="result-url"></div>
+                        <div class="result-title"></div>
+                        <div class="result-desc-full"></div>
+                        <div class="result-desc-partial"></div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-url"></div>
+                        <div class="result-title"></div>
+                        <div class="result-desc-full"></div>
+                        <div class="result-desc-partial"></div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-url"></div>
+                        <div class="result-title"></div>
+                        <div class="result-desc-full"></div>
+                        <div class="result-desc-partial"></div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-url"></div>
+                        <div class="result-title"></div>
+                        <div class="result-desc-full"></div>
+                        <div class="result-desc-partial"></div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-url"></div>
+                        <div class="result-title"></div>
+                        <div class="result-desc-full"></div>
+                        <div class="result-desc-partial"></div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+
 </body>
+
 </html>
