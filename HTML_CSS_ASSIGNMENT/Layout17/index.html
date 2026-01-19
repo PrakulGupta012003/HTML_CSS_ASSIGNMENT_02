@@ -3,160 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Builder</title>
+    <title>Sidebar + Content</title>
+    <meta name="description" content="Sidebar + Content">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Top Navigation Bar -->
-        <div class="top-nav">
-            <span class="nav-label">Layouts:</span>
-            <button class="layout-btn">3-Column Feed</button>
-            <button class="layout-btn">Sidebar + Content</button>
-            <button class="layout-btn">Filter + Grid</button>
-            <button class="layout-btn">Map + List Split</button>
-            <button class="layout-btn">Dashboard KPI</button>
-            <button class="layout-btn">CRM Record Detail</button>
-            <button class="layout-btn">Data Table</button>
-            <button class="layout-btn">Kanban Board</button>
-            <button class="layout-btn">Chat/Messenger</button>
-            <button class="layout-btn">Profile + Feed</button>
-            <button class="layout-btn">Search Results</button>
-            <button class="layout-btn">Video Player</button>
-            <button class="layout-btn">E-commerce PDP</button>
-            <button class="layout-btn">Live Score</button>
-            <button class="layout-btn">Settings Page</button>
-            <button class="layout-btn">Calendar</button>
-            <button class="layout-btn layout-btn-active">Form Builder</button>
+    <div class="screen">
+        <nav class="top-nav">
+            <span>Layouts: </span>
+            <a  href="../Layout1/index.html">3-Column Feed</a>
+            <a href="../Layout2/index.html">Sidebar + Content</a>
+            <a href="../Layout3/index.html">Filter + Grid</a>
+            <a href="../Layout4/index.html">Map + List Split</a>
+            <a href="../Layout5/index.html">Dashboard KPI</a>
+            <a href="../Layout6/index.html">CRM Record Details</a>
+            <a href="../Layout7/index.html">Data Table</a>
+            <a href="../Layout8/index.html">Kanban Board</a>
+            <a href="../Layout9/index.html">Chat/Messenger</a>
+            <a href="../Layout10/index.html">Profile + Feed</a>
+            <a href="../Layout11/index.html">Search Results</a>
+            <a href="../Layout12/index.html">Video Player</a>
+            <a href="../Layout13/index.html">E-commerce PDP</a>
+            <a href="../Layout14/index.html">Live Score</a>
+            <a href="../Layout15/index.html">Settings Page</a>
+            <a href="../Layout16/index.html">Calender</a>
+            <a class="active" href="../Layout17/index.html">Form Builder</a>
+        </nav>
+        
+        
+        <div class="source">
+            <span>    
+                Source: Qualtrics/Typeform
+            </span>
         </div>
-
-        <!-- Source Info Bar -->
-        <div class="source-bar">
-            <span class="source-text">Source: Qualtrics/Typeform</span>
-        </div>
-
-        <!-- Main Content Area -->
-        <div class="main-content">
-            <div class="content-wrapper">
-                <!-- Left Sidebar - Form Elements -->
-                <div class="left-sidebar">
-                    <!-- Sidebar Header -->
-                    <div class="sidebar-header">
-                        <div class="header-title"></div>
-                    </div>
-
-                    <!-- Add Element Button -->
-                    <div class="sidebar-add-section">
-                        <div class="add-button"></div>
-                    </div>
-
-                    <!-- Form Elements List -->
-                    <div class="elements-list">
-                        <div class="element-card">
-                            <div class="element-header">
-                                <div class="element-icon"></div>
-                                <div class="element-icon-2"></div>
-                                <div class="element-label"></div>
-                            </div>
-                            <div class="element-description"></div>
-                        </div>
-
-                        <div class="element-card element-card-active">
-                            <div class="element-header">
-                                <div class="element-icon"></div>
-                                <div class="element-icon-2"></div>
-                                <div class="element-label"></div>
-                            </div>
-                            <div class="element-description"></div>
-                        </div>
-
-                        <div class="element-card">
-                            <div class="element-header">
-                                <div class="element-icon"></div>
-                                <div class="element-icon-2"></div>
-                                <div class="element-label"></div>
-                            </div>
-                            <div class="element-description"></div>
-                        </div>
-
-                        <div class="element-card">
-                            <div class="element-header">
-                                <div class="element-icon"></div>
-                                <div class="element-icon-2"></div>
-                                <div class="element-label"></div>
-                            </div>
-                            <div class="element-description"></div>
-                        </div>
-
-                        <div class="element-card">
-                            <div class="element-header">
-                                <div class="element-icon"></div>
-                                <div class="element-icon-2"></div>
-                                <div class="element-label"></div>
-                            </div>
-                            <div class="element-description"></div>
-                        </div>
-                    </div>
+        <div class="container">
+            <div class="layout">
+              <div class="sidebar-left">
+                <div class="sidebar-header">
+                  <div class="header-placeholder"></div>
                 </div>
-
-                <!-- Center Canvas Area -->
-                <div class="canvas-area">
-                    <!-- Canvas Toolbar -->
-                    <div class="canvas-toolbar">
-                        <div class="toolbar-button"></div>
-                        <div class="toolbar-button"></div>
-                        <div class="toolbar-button toolbar-button-active"></div>
-                        <div class="toolbar-button"></div>
-                    </div>
-
-                    <!-- Form Preview -->
-                    <div class="form-preview">
-                        <div class="form-container">
-                            <div class="form-title"></div>
-                            <div class="form-fields">
-                                <div class="form-field"></div>
-                                <div class="form-field"></div>
-                                <div class="form-actions">
-                                    <div class="action-button action-button-secondary"></div>
-                                    <div class="action-button action-button-primary"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="sidebar-action">
+                  <div class="action-button"></div>
                 </div>
-
-                <!-- Right Sidebar - Properties -->
-                <div class="right-sidebar">
-                    <!-- Properties Header -->
-                    <div class="properties-header">
-                        <div class="properties-title"></div>
+                <div class="list-container">
+                  <div class="list-item">
+                    <div class="item-header">
+                      <div class="icon-small"></div>
+                      <div class="icon-medium"></div>
+                      <div class="title-placeholder"></div>
                     </div>
-
-                    <!-- Properties Content -->
-                    <div class="properties-content">
-                        <div class="property-group">
-                            <div class="property-label"></div>
-                            <div class="property-input"></div>
-                        </div>
-
-                        <div class="property-group">
-                            <div class="property-label property-label-medium"></div>
-                            <div class="property-input"></div>
-                        </div>
-
-                        <div class="property-toggle">
-                            <div class="toggle-label"></div>
-                            <div class="toggle-switch"></div>
-                        </div>
-
-                        <div class="property-toggle">
-                            <div class="toggle-label toggle-label-medium"></div>
-                            <div class="toggle-switch toggle-switch-active"></div>
-                        </div>
+                    <div class="subtitle-placeholder"></div>
+                  </div>
+                  <div class="list-item active">
+                    <div class="item-header">
+                      <div class="icon-small"></div>
+                      <div class="icon-medium"></div>
+                      <div class="title-placeholder"></div>
                     </div>
+                    <div class="subtitle-placeholder"></div>
+                  </div>
+                  <div class="list-item">
+                    <div class="item-header">
+                      <div class="icon-small"></div>
+                      <div class="icon-medium"></div>
+                      <div class="title-placeholder"></div>
+                    </div>
+                    <div class="subtitle-placeholder"></div>
+                  </div>
+                  <div class="list-item">
+                    <div class="item-header">
+                      <div class="icon-small"></div>
+                      <div class="icon-medium"></div>
+                      <div class="title-placeholder"></div>
+                    </div>
+                    <div class="subtitle-placeholder"></div>
+                  </div>
+                  <div class="list-item">
+                    <div class="item-header">
+                      <div class="icon-small"></div>
+                      <div class="icon-medium"></div>
+                      <div class="title-placeholder"></div>
+                    </div>
+                    <div class="subtitle-placeholder"></div>
+                  </div>
                 </div>
+              </div>
+              <div class="main-area">
+                <div class="toolbar">
+                  <div class="tool-button"></div>
+                  <div class="tool-button"></div>
+                  <div class="tool-button active"></div>
+                  <div class="tool-button"></div>
+                </div>
+                <div class="content-area">
+                  <div class="card">
+                    <div class="card-title"></div>
+                    <div class="form-group">
+                      <div class="input-field"></div>
+                      <div class="input-field"></div>
+                      <div class="button-group">
+                        <div class="button button-secondary"></div>
+                        <div class="button button-primary"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="sidebar-right">
+                <div class="sidebar-header">
+                  <div class="label-placeholder large"></div>
+                </div>
+                <div class="settings-container">
+                  <div class="setting-group">
+                    <div class="label-placeholder"></div>
+                    <div class="dropdown"></div>
+                  </div>
+                  <div class="setting-group">
+                    <div class="label-placeholder medium"></div>
+                    <div class="dropdown"></div>
+                  </div>
+                  <div class="toggle-row">
+                    <div class="label-placeholder medium"></div>
+                    <div class="toggle off"></div>
+                  </div>
+                  <div class="toggle-row">
+                    <div class="label-placeholder large"></div>
+                    <div class="toggle on"></div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
+        
     </div>
+    
 </body>
 </html>
