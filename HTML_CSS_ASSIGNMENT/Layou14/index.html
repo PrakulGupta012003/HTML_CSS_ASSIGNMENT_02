@@ -3,208 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Live Score Layout</title>
+    <title>Sidebar + Content</title>
+    <meta name="description" content="Sidebar + Content">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Top Navigation Bar -->
-        <div class="top-nav">
-            <span class="nav-label">Layouts:</span>
-            <button class="nav-btn">3-Column Feed</button>
-            <button class="nav-btn">Sidebar + Content</button>
-            <button class="nav-btn">Filter + Grid</button>
-            <button class="nav-btn">Map + List Split</button>
-            <button class="nav-btn">Dashboard KPI</button>
-            <button class="nav-btn">CRM Record Detail</button>
-            <button class="nav-btn">Data Table</button>
-            <button class="nav-btn">Kanban Board</button>
-            <button class="nav-btn">Chat/Messenger</button>
-            <button class="nav-btn">Profile + Feed</button>
-            <button class="nav-btn">Search Results</button>
-            <button class="nav-btn">Video Player</button>
-            <button class="nav-btn">E-commerce PDP</button>
-            <button class="nav-btn active">Live Score</button>
-            <button class="nav-btn">Settings Page</button>
-            <button class="nav-btn">Calendar</button>
-            <button class="nav-btn">Form Builder</button>
+    <div class="screen">
+        <nav class="top-nav">
+            <span>Layouts: </span>
+            <a href="../Layout1/index.html">3-Column Feed</a>
+            <a href="../Layout2/index.html">Sidebar + Content</a>
+            <a href="../Layout3/index.html">Filter + Grid</a>
+            <a href="../Layout4/index.html">Map + List Split</a>
+            <a href="../Layout5/index.html">Dashboard KPI</a>
+            <a href="../Layout6/index.html">CRM Record Details</a>
+            <a href="../Layout7/index.html">Data Table</a>
+            <a href="../Layout8/index.html">Kanban Board</a>
+            <a href="../Layout9/index.html">Chat/Messenger</a>
+            <a href="../Layout10/index.html">Profile + Feed</a>
+            <a href="../Layout11/index.html">Search Results</a>
+            <a href="../Layout12/index.html">Video Player</a>
+            <a href="../Layout13/index.html">E-commerce PDP</a>
+            <a class="active" href="../Layout14/index.html">Live Score</a>
+            <a href="../Layout15/index.html">Settings Page</a>
+            <a href="../Layout16/index.html">Calender</a>
+            <a href="../Layout17/index.html">Form Builder</a>
+        </nav>
+        
+        
+        <div class="source">
+            <span>    
+                Source: Slack/WhatsApp
+            </span>
         </div>
 
-        <!-- Source Bar -->
-        <div class="source-bar">
-            <span class="source-text">Source: Cricinfo/ESPN</span>
-        </div>
-
-        <!-- Main Content -->
-        <div class="main-content">
-            <div class="content-wrapper">
-                <!-- Header -->
-                <div class="header">
-                    <div class="logo"></div>
-                    <div class="nav-links">
-                        <div class="nav-link"></div>
-                        <div class="nav-link"></div>
-                        <div class="nav-link"></div>
-                        <div class="nav-link"></div>
-                        <div class="nav-link"></div>
-                    </div>
-                    <div class="header-spacer"></div>
-                    <div class="user-icon"></div>
+        <div class="sports-container">
+=
+            <div class="top-header">
+                <div class="logo"></div>
+                <div class="nav-links">
+                    <div class="nav-link"></div>
+                    <div class="nav-link"></div>
+                    <div class="nav-link"></div>
+                    <div class="nav-link"></div>
+                    <div class="nav-link"></div>
                 </div>
+                <div class="header-spacer"></div>
+                <div class="header-icon"></div>
+            </div>
+    
 
-                <!-- Score Banner -->
-                <div class="score-banner">
-                    <div class="score-content">
-                        <div class="score-section">
-                            <!-- Team 1 -->
-                            <div class="team team-left">
-                                <div class="team-flag"></div>
-                                <div class="team-info">
-                                    <div class="team-name"></div>
-                                    <div class="team-score"></div>
-                                </div>
-                            </div>
-
-                            <!-- Status -->
-                            <div class="match-status">
-                                <div class="status-label"></div>
-                                <div class="status-indicator"></div>
-                            </div>
-
-                            <!-- Team 2 -->
-                            <div class="team team-right">
-                                <div class="team-info">
-                                    <div class="team-name"></div>
-                                    <div class="team-score"></div>
-                                </div>
-                                <div class="team-flag"></div>
+            <div class="match-header">
+                <div class="match-info">
+                    <div class="teams-row">
+                        <div class="team">
+                            <div class="team-logo"></div>
+                            <div class="team-info">
+                                <div class="team-name"></div>
+                                <div class="team-score"></div>
                             </div>
                         </div>
-                        <div class="match-detail"></div>
+                        <div class="match-status">
+                            <div class="status-label"></div>
+                            <div class="status-time"></div>
+                        </div>
+                        <div class="team away">
+                            <div class="team-logo"></div>
+                            <div class="team-info">
+                                <div class="team-name"></div>
+                                <div class="team-score"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="match-details"></div>
+                </div>
+            </div>
+    
+            <!-- Content Area -->
+            <div class="content-area">
+                <!-- Main Stats Section -->
+                <div class="main-stats-section">
+                    <!-- Tabs -->
+                    <div class="tabs">
+                        <div class="tab active"></div>
+                        <div class="tab inactive"></div>
+                        <div class="tab inactive"></div>
+                        <div class="tab inactive"></div>
+                    </div>
+    
+                    <!-- Stats Table -->
+                    <div class="stats-table">
+                        <div class="table-header">
+                            <div class="header-cell name"></div>
+                            <div class="header-spacer"></div>
+                            <div class="header-cell stat"></div>
+                            <div class="header-cell stat"></div>
+                            <div class="header-cell stat"></div>
+                            <div class="header-cell stat"></div>
+                        </div>
+                        <div class="table-row">
+                            <div class="row-cell name"></div>
+                            <div class="header-spacer"></div>
+                            <div class="row-cell stat"></div>
+                            <div class="row-cell stat"></div>
+                            <div class="row-cell stat"></div>
+                            <div class="row-cell stat"></div>
+                        </div>
+                        <div class="table-row">
+                            <div class="row-cell name"></div>
+                            <div class="header-spacer"></div>
+                            <div class="row-cell stat"></div>
+                            <div class="row-cell stat"></div>
+                            <div class="row-cell stat"></div>
+                            <div class="row-cell stat"></div>
+                        </div>
+                        <div class="table-row">
+                            <div class="row-cell name"></div>
+                            <div class="header-spacer"></div>
+                            <div class="row-cell stat"></div>
+                            <div class="row-cell stat"></div>
+                            <div class="row-cell stat"></div>
+                            <div class="row-cell stat"></div>
+                        </div>
+                        <div class="table-row">
+                            <div class="row-cell name"></div>
+                            <div class="header-spacer"></div>
+                            <div class="row-cell stat"></div>
+                            <div class="row-cell stat"></div>
+                            <div class="row-cell stat"></div>
+                            <div class="row-cell stat"></div>
+                        </div>
+                        <div class="table-row">
+                            <div class="row-cell name"></div>
+                            <div class="header-spacer"></div>
+                            <div class="row-cell stat"></div>
+                            <div class="row-cell stat"></div>
+                            <div class="row-cell stat"></div>
+                            <div class="row-cell stat"></div>
+                        </div>
+                        <div class="table-row">
+                            <div class="row-cell name"></div>
+                            <div class="header-spacer"></div>
+                            <div class="row-cell stat"></div>
+                            <div class="row-cell stat"></div>
+                            <div class="row-cell stat"></div>
+                            <div class="row-cell stat"></div>
+                        </div>
                     </div>
                 </div>
-
-                <!-- Content Area -->
-                <div class="content-area">
-                    <!-- Main Content Column -->
-                    <div class="main-column">
-                        <!-- Tabs -->
-                        <div class="tabs">
-                            <div class="tab active"></div>
-                            <div class="tab"></div>
-                            <div class="tab"></div>
-                            <div class="tab"></div>
+    
+                <!-- Sidebar -->
+                <div class="sidebar">
+                    <div class="sidebar-title"></div>
+                    
+                    <div class="event-card">
+                        <div class="event-header">
+                            <div class="event-time"></div>
+                            <div class="event-icon"></div>
                         </div>
-
-                        <!-- Scorecard Table -->
-                        <div class="scorecard-table">
-                            <!-- Table Header -->
-                            <div class="table-header">
-                                <div class="header-cell player"></div>
-                                <div class="header-spacer"></div>
-                                <div class="header-cell stat"></div>
-                                <div class="header-cell stat"></div>
-                                <div class="header-cell stat"></div>
-                                <div class="header-cell stat"></div>
-                            </div>
-
-                            <!-- Table Rows -->
-                            <div class="table-row">
-                                <div class="cell player"></div>
-                                <div class="cell-spacer"></div>
-                                <div class="cell stat"></div>
-                                <div class="cell stat"></div>
-                                <div class="cell stat"></div>
-                                <div class="cell stat"></div>
-                            </div>
-
-                            <div class="table-row">
-                                <div class="cell player"></div>
-                                <div class="cell-spacer"></div>
-                                <div class="cell stat"></div>
-                                <div class="cell stat"></div>
-                                <div class="cell stat"></div>
-                                <div class="cell stat"></div>
-                            </div>
-
-                            <div class="table-row">
-                                <div class="cell player"></div>
-                                <div class="cell-spacer"></div>
-                                <div class="cell stat"></div>
-                                <div class="cell stat"></div>
-                                <div class="cell stat"></div>
-                                <div class="cell stat"></div>
-                            </div>
-
-                            <div class="table-row">
-                                <div class="cell player"></div>
-                                <div class="cell-spacer"></div>
-                                <div class="cell stat"></div>
-                                <div class="cell stat"></div>
-                                <div class="cell stat"></div>
-                                <div class="cell stat"></div>
-                            </div>
-
-                            <div class="table-row">
-                                <div class="cell player"></div>
-                                <div class="cell-spacer"></div>
-                                <div class="cell stat"></div>
-                                <div class="cell stat"></div>
-                                <div class="cell stat"></div>
-                                <div class="cell stat"></div>
-                            </div>
-
-                            <div class="table-row">
-                                <div class="cell player"></div>
-                                <div class="cell-spacer"></div>
-                                <div class="cell stat"></div>
-                                <div class="cell stat"></div>
-                                <div class="cell stat"></div>
-                                <div class="cell stat"></div>
-                            </div>
-                        </div>
+                        <div class="event-description"></div>
                     </div>
-
-                    <!-- Sidebar Column -->
-                    <div class="sidebar-column">
-                        <div class="sidebar-title"></div>
-                        
-                        <!-- Commentary Items -->
-                        <div class="commentary-item">
-                            <div class="commentary-header">
-                                <div class="over-ball"></div>
-                                <div class="ball-icon"></div>
-                            </div>
-                            <div class="commentary-text"></div>
+    
+                    <div class="event-card">
+                        <div class="event-header">
+                            <div class="event-time"></div>
+                            <div class="event-icon"></div>
                         </div>
-
-                        <div class="commentary-item">
-                            <div class="commentary-header">
-                                <div class="over-ball"></div>
-                                <div class="ball-icon"></div>
-                            </div>
-                            <div class="commentary-text"></div>
+                        <div class="event-description"></div>
+                    </div>
+    
+                    <div class="event-card">
+                        <div class="event-header">
+                            <div class="event-time"></div>
+                            <div class="event-icon"></div>
                         </div>
-
-                        <div class="commentary-item">
-                            <div class="commentary-header">
-                                <div class="over-ball"></div>
-                                <div class="ball-icon"></div>
-                            </div>
-                            <div class="commentary-text"></div>
+                        <div class="event-description"></div>
+                    </div>
+    
+                    <div class="event-card">
+                        <div class="event-header">
+                            <div class="event-time"></div>
+                            <div class="event-icon"></div>
                         </div>
-
-                        <div class="commentary-item">
-                            <div class="commentary-header">
-                                <div class="over-ball"></div>
-                                <div class="ball-icon"></div>
-                            </div>
-                            <div class="commentary-text"></div>
-                        </div>
+                        <div class="event-description"></div>
                     </div>
                 </div>
             </div>
         </div>
+
+
+        
     </div>
+    
 </body>
 </html>
