@@ -1,73 +1,66 @@
-<!-- HTML FILE (index.html) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3-Column Feed Layout</title>
+    <title>3-column feed</title>
+    <meta name="description" content="3-column feed">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Header Navigation -->
-        <div class="header">
-            <span class="header-label">Layouts:</span>
-            <button class="nav-button active">3-Column Feed</button>
-            <button class="nav-button inactive">Sidebar + Content</button>
-            <button class="nav-button inactive">Filter + Grid</button>
-            <button class="nav-button inactive">Map + List Split</button>
-            <button class="nav-button inactive">Dashboard KPI</button>
-            <button class="nav-button inactive">CRM Record Detail</button>
-            <button class="nav-button inactive">Data Table</button>
-            <button class="nav-button inactive">Kanban Board</button>
-            <button class="nav-button inactive">Chat/Messenger</button>
-            <button class="nav-button inactive">Profile + Feed</button>
-            <button class="nav-button inactive">Search Results</button>
-            <button class="nav-button inactive">Video Player</button>
-            <button class="nav-button inactive">E-commerce PDP</button>
-            <button class="nav-button inactive">Live Score</button>
-            <button class="nav-button inactive">Settings Page</button>
-            <button class="nav-button inactive">Calendar</button>
-            <button class="nav-button inactive">Form Builder</button>
+    <div class="screen">
+        <nav class="top-nav">
+            <span>Layouts: </span>
+            <a class="active" href="../3-Column Feed">3-Column Feed</a>
+            <a href="../Sidebar + content">Sidebar + Content</a>
+            <a href="../Filter + Grid/index.html">Filter + Grid</a>
+            <a href="../Map + List Split/index.html">Map + List Split</a>
+            <a href="../Dashboard KPI/index.html">Dashboard KPI</a>
+            <a href="../CRM Record Details/index.html">CRM Record Details</a>
+            <a href="../Data Table/index.html">Data Table</a>
+            <a href="../Kanban Board/">Kanban Board</a>
+            <a href="../Chat-Messenger/">Chat/Messenger</a>
+            <a href="../Profile + Feed/index.html">Profile + Feed</a>
+            <a href="../Search Results/">Search Results</a>
+            <a href="../Video Player/">Video Player</a>
+            <a href="../E-commerce PDP/">E-commerce PDP</a>
+            <a href="../Live Score/">Live Score</a>
+            <a href="../Settings Page/">Settings Page</a>
+            <a href="../Calender/">Calender</a>
+            <a href="../Form Builder/">Form Builder</a>
+        </nav>      
+        <div class="source">
+            <span>
+                Source: Twitter/X
+            </span>
         </div>
-
-        <!-- Subheader -->
-        <div class="subheader">
-            <span class="subheader-text">Source: Twitter/X</span>
-        </div>
-
-        <!-- Main Content Area -->
-        <div class="main-content">
-            <div class="content-wrapper">
-                <!-- Left Sidebar -->
-                <div class="left-sidebar">
-                    <div class="sidebar-item primary"></div>
-                    <div class="sidebar-item secondary"></div>
-                    <div class="sidebar-item secondary"></div>
-                    <div class="sidebar-item secondary"></div>
-                    <div class="sidebar-item secondary"></div>
-                    <div class="sidebar-spacer"></div>
-                    <div class="sidebar-button"></div>
-                </div>
-
-                <!-- Center Feed -->
-                <div class="center-feed">
-                    <div class="feed-header"></div>
-                    <div class="feed-content">
-                        <div class="feed-post short"></div>
-                        <div class="feed-post medium"></div>
-                        <div class="feed-post short"></div>
-                    </div>
-                </div>
-
-                <!-- Right Sidebar -->
-                <div class="right-sidebar">
-                    <div class="search-box"></div>
-                    <div class="trends-card medium"></div>
-                    <div class="trends-card large"></div>
-                </div>
-            </div>
+        <div class="layout">
+            <nav class="left-nav">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <button></button>
+            </nav>
+            <main class="central-main">
+                <section class="main-up"></section>
+                <section class="main-down">
+                    <article class="main-article"></article>
+                    <article class="main-article article-central"></article>
+                    <article class="main-article"></article>
+                </section>
+            </main>
+            <aside class="right-aside">
+                <section></section>
+                <section></section>
+                <section></section>
+            </aside>
         </div>
     </div>
+    
+    
 </body>
 </html>
